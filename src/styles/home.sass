@@ -1,0 +1,146 @@
+.br-6
+    border-radius: 6px
+.home-page
+    background: #BFBFBE
+    height: 100%
+    width: 100%
+    padding: 100px 0
+    overflow: auto
+    .dialog
+        margin: 0 auto
+        width: 520px
+        border-radius: 10px
+        background: white
+        padding: 20px
+        padding-bottom: 10px
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
+        position: relative
+        .close
+            position: absolute
+            top: 20px
+            right: 20px
+            width: 24px
+            height: 24px
+            display: flex
+            justify-content: center
+            align-items: center
+            background: $base-bg
+            img
+                width: 18px
+                height: 18px
+        .title
+            font-weight: bold
+            font-size: 18px
+            line-height: 24px
+            margin-bottom: 40px
+        .content
+            .tran-form
+                display: flex
+                align-items: center
+                margin-bottom: 30px
+                .arrow
+                    width: 18px
+                    height: 18px
+                    margin: 26px 10px 0 10px
+                .form-item
+                    flex: 1
+                    label
+                        color: $base-font-color-light
+                        font-weight: bold
+                        display: inline-block
+                        margin-bottom: 12px
+                    .input-wrap
+                        position: relative
+                        input
+                            border: 0
+                            width: 100%
+                            line-height: 48px
+                            background: $base-bg
+                            color: $base-font-color-light
+                            outline: none
+                        #address-from
+                            padding: 0 15px 0 48px
+                        #address-to
+                            padding: 0 48px
+                        img.prefix
+                            position: absolute
+                            width: 24px
+                            left: 12px
+                            top: 12px
+                        img.suffix
+                            position: absolute
+                            width: 14px
+                            right: 12px
+                            top: 17px
+            .count-form
+                margin-bottom: 30px
+                .top
+                    display: flex
+                    justify-content: space-between
+                    color: $base-font-color-light
+                    .top-name
+                        font-size: 16px
+                        font-weight: bold
+                        margin-bottom: 12px
+                .middle
+                    display: flex
+                    align-items: center
+                    border: 2px solid #dcdfe6
+                    margin-bottom: 8px
+                    .img-wrap
+                        padding: 16px
+                        border-right: 2px solid #dcdfe6
+                        img
+                            width: 36px
+                    input
+                        border: 0
+                        line-height: 48px
+                        padding: 0 16px
+                        flex: 1
+                        outline: none
+                        font-size: 18px
+                        font-weight: bold
+                    .rate
+                        padding-right: 16px
+                        span
+                            color: $base-font-color-light
+                            font-size: 13px
+                .bottom
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                    li
+                        padding: 8px
+                        background: $base-bg
+                        color: $base-font-color-light
+                        font-weight: bold
+                        font-size: 13px
+                        margin-left: 10px
+                        cursor: pointer
+            .time-box
+                display: flex
+                align-items: center
+                padding: 10px
+                background: $base-bg
+                margin-bottom: 20px
+                img
+                    width: 16px  
+                    height: 16px 
+                    margin-right: 10px
+            .button-group
+                display: flex
+                flex-direction: column
+                button
+                    border: 0
+                    cursor: pointer
+                .confirm
+                    background: $base-font-color
+                    color: white
+                    height: 64px
+                    line-height: 64px
+                    font-size: 18px
+                .cancel
+                    background: white
+                    color: $base-font-color-light
+                    line-height: 64px
+                    font-weight: bold

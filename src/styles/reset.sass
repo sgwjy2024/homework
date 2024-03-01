@@ -1,0 +1,173 @@
+
+// 全部改为怪异盒模型
+*
+    box-sizing: border-box
+    
+// 1. 隐藏页面滚动条
+// ::-webkit-scrollbar 
+//     display: none!important
+//     width: 0!important
+//     height: 0!important
+//     opacity: 0
+//     background-color: transparent
+//     -webkit-overflow-scrolling: touch
+
+// 1. 清除body的默认margin
+// 2. 定义页面的默认字号
+// 3. 定义页面的默认字体
+body
+    margin: 0
+    font-size: $base-font-size
+    font-family: $base-font-family
+    color: $base-font-color
+
+// 1. 清除某些元素在不同浏览器下内外补白不同造成的影响
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+form,
+fieldset,
+legend,
+textarea,
+button,
+p,
+blockquote,
+th,
+td,
+pre,
+xmp 
+    margin: 0
+    padding: 0
+
+// 1. 为不继承的元素设定继承父级字体
+input,
+textarea,
+button,
+select,
+pre,
+xmp,
+tt,
+code,
+kbd,
+samp 
+    font-family: inherit
+
+// 1. 为不继承的元素设定继承父级字号
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+small,
+big,
+input,
+textarea,
+button,
+select 
+    font-size: inherit
+
+// 1. 重置斜体表现为正常文本
+address,
+cite,
+dfn,
+em,
+i,
+optgroup,
+var 
+    font-style: normal
+
+// 1. 清除单元格边距并让边框合并
+table 
+    border-collapse: collapse
+    border-spacing: 0
+    table-layout: fixed
+    text-align: left
+
+// 1. 清除列表默认序号
+ul,
+ol,
+menu 
+    list-style: none
+
+// 1. 清除默认边框
+// 2. 清除img底部留白问题
+fieldset,
+img 
+    border: 0
+    display: block
+
+// 1. 设置HTML5部分新增元素为块元素
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary 
+    display: block
+
+// 1. 清除webkit下表单元素的outline
+textarea,
+button,
+select,
+summary,
+a 
+    outline: 0 none
+    color: #222222
+
+// 1. 清除Firefox按钮内部边框和补白
+button::-moz-focus-inner,
+input::-moz-focus-inner 
+    padding: 0
+    border: 0
+
+// 1. 清除 summary 的展开收起标识
+::-webkit-details-marker 
+    display: none
+
+
+// 1. 重置mark元素的默认背景色
+mark 
+    background-color: rgba(0, 0, 0, 0)
+
+// 1. 清除文本线条装饰
+a,
+ins,
+s,
+u,
+del 
+    text-decoration: none
+
+a,
+img 
+    -webkit-touch-callout: none
+
+div 
+    // -webkit-overflow-scrolling: touch
+
+iframe
+    padding: 0
+    margin: 0
+    border: 0
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+
+input[type='number'] 
+    -moz-appearance: textfield
+
