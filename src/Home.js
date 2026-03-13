@@ -27,7 +27,7 @@ export default function Home() {
                 <div className='close'>
                     <img src="/close.png" alt="close"></img>
                 </div>
-                <div className='title'>Deposit ATOM</div>
+                <div className='title'>Deposit ATOM111</div>
                 <div className='content'>
                     <div className='tran-form'>
                         <div className='form-item br-6'>
